@@ -73,15 +73,16 @@ class SurchargeObserver implements ObserverInterface
 # List all events in Magento 2
 
 Events in PHP Files
-Event name: sales_quote_remove_item
-File: vendor/magento/Collect/Model/Quote.php
 
-	$this->_eventManager->dispatch('sales_quote_remove_item', ['quote_item' => $item]);
+**Event name**: sales_quote_remove_item
+**File**: vendor/magento/Collect/Model/Quote.php
 
-Event name: sales_quote_add_item
-File: vendor/magento/Collect/Model/Quote.php
+$this->_eventManager->dispatch('sales_quote_remove_item', ['quote_item' => $item]);
 
-	$this->_eventManager->dispatch('sales_quote_add_item', ['quote_item' => $item]);
+**Event name**: sales_quote_add_item
+**File**: vendor/magento/Collect/Model/Quote.php
+
+$this->_eventManager->dispatch('sales_quote_add_item', ['quote_item' => $item]);
 
 Event name: sales_quote_product_add_after
 File: vendor/magento/Collect/Model/Quote.php
